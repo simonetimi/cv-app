@@ -1,0 +1,45 @@
+div.editor {
+  grid-column: 1 / 2;
+  border: 2px solid #333;
+  border-radius: 14px;
+  width: 90%;
+  height: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+header {}
+
+header h1 {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  margin: 0.2rem;
+}
+
+header h2 {
+  text-align: center;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  margin: 0.2rem;
+}
+
+div.bioInputs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: auto;
+}
+
+input {
+  border: 0;
+  grid-column: 2 / 3;
+  box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
+  width: 200px;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
