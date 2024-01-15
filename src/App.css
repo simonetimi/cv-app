@@ -1,8 +1,7 @@
 #root {
   padding: 1rem;
   height: 92vh;
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

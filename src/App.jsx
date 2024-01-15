@@ -1,14 +1,19 @@
 import './App.css';
+import { useState } from 'react';
+
 import Editor from './components/Editor';
-import Preview from './components/Preview';
+
+function Bridge() {
+  const [formData, setFormData] = useState({
+    header: { name: '', email: '', address: '', phone: '' },
+    education: ['school', 'city'],
+    experience: ['hi'],
+  });
+  return <Editor />;
+}
 
 function App() {
-  return (
-    <>
-      <Editor />
-      <Preview />
-    </>
-  );
+  return <Bridge />;
 }
 
 export default App;
