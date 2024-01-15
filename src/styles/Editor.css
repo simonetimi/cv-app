@@ -1,7 +1,6 @@
 div.Editor {
   box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
   border-radius: 4px;
-  width: 90%;
   height: 100%;
   margin: 2rem;
   display: flex;
@@ -9,18 +8,45 @@ div.Editor {
   justify-content: flex-start;
   align-items: center;
   gap: 0.4rem;
-  width: 40%;
+  width: 42%;
+}
+
+header.forms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 header {
+  background-color: mediumturquoise;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: mediumturquoise;
   width: 100%;
-  height: 14vh;
+  height: 22vh;
+  font-size: 0.8rem;
+}
+
+header>div:nth-child(1)>p:nth-child(1) {
+  font-size: 1.4rem;
+}
+
+header>div:nth-child(1)>p:nth-child(2) {
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #FFF;
+}
+
+header>div {
+  margin: 1rem;
+}
+
+header>div>p {
+  margin: 0.3rem;
 }
 
 label {
+  margin: 0.4rem 0.2rem 0.4rem 0.8rem;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
@@ -28,10 +54,19 @@ label {
 
 input {
   border: 0;
-  grid-column: 2 / 3;
   box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.3);
-  width: 200px;
-  height: 20px;
+  width: 140px;
+  height: 10px;
   border-radius: 10px;
   padding: 0.3rem;
+}
+
+button {
+  margin: 0.4rem 0.4rem -0.77rem 0.6rem;
+  background-color: white;
+  border: 0;
+  box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.3);
+  width: 58px;
+  height: 20px;
+  border-radius: 10px;
 }

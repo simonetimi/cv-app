@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-bind */
 /* eslint-disable react/prop-types */
 import '../styles/Editor.css';
 import { useState } from 'react';
@@ -15,9 +16,8 @@ function Editor() {
   const [isHeaderSubmitted, setIsHeaderSubmitted] = useState(false);
   const [headerInput, setHeaderInput] = useState({
     name: '',
-    bdate: '',
     phone: '',
-    profession: '',
+    pro: '',
     address: '',
     email: '',
   });
@@ -38,15 +38,27 @@ function Editor() {
   return (
     <div className='Editor'>
       {!isHeaderSubmitted ? (
-        <header>
+        <header className='forms'>
           <Input label='Name' type='text' id='name' handleOnChange={handleOnChange} />
+          <Input label='Phone' type='tel' id='phone' handleOnChange={handleOnChange} />
+          <Input label='Profession' type='text' id='pro' handleOnChange={handleOnChange} />
+          <Input label='Address' type='text' id='address' handleOnChange={handleOnChange} />
+          <Input label='Email' type='email' id='email' handleOnChange={handleOnChange} />
           <button type='button' onClick={handleSubmit}>
             Submit
           </button>
         </header>
       ) : (
-        <header>
-          <p>{headerInput.name}</p>
+        <header className='display'>
+          <div>
+            <p>{headerInput.name}</p>
+            <p>{headerInput.pro}</p>
+          </div>
+          <div>
+            <p>Tel: {headerInput.phone}</p>
+            <p>Email: {headerInput.email}</p>
+            <p>Address: {headerInput.address}</p>
+          </div>
         </header>
       )}
     </div>
