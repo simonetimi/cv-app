@@ -30,6 +30,16 @@ section>div {
   margin: 1rem;
 }
 
-section>div>p {
-  margin: 0.3rem;
+section>div>p,
+section>div:nth-child(2)>div>p {
+  margin: 0.2rem;
+}
+
+section>div:nth-child(2)>div {
+  display: flex;
+}
+
+section>div:nth-child(2)>div>button {
+  margin-left: auto;
+  margin-bottom: 0.6rem;
 }

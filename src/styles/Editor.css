@@ -1,7 +1,7 @@
 div.Editor {
   box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
   border-radius: 4px;
-  height: 100%;
+  min-height: 90vh;
   margin: 2rem;
   display: flex;
   flex-direction: column;
@@ -68,23 +68,24 @@ button {
   background-color: white;
   border: 0;
   box-shadow: 2px 4px 4px hsl(0deg 0% 0% / 0.3);
-  width: 58px;
   height: 20px;
   border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(2px);
 }
 
 input[type=checkbox] {
   width: 20px;
   height: 20px;
   border-radius: 4px;
-  appearance: none;
 }
 
 input[type=checkbox]:hover {
   cursor: pointer;
-  background-color: mediumaquamarine;
-}
-
-input[type=checkbox]:checked {
-  background-color: mediumaquamarine;
 }
