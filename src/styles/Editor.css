@@ -7,7 +7,7 @@ div.Editor {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 0.4rem;
+  gap: 1rem;
   width: 42%;
 }
 

@@ -5,6 +5,7 @@ import '../styles/Experience.css';
 import { useState } from 'react';
 import Header from './Header';
 import Education from './Education';
+import Experience from './Experience';
 
 function Editor() {
   const [eduCount, setEduCount] = useState(0);
@@ -16,6 +17,15 @@ function Editor() {
     setEduCount(eduCount + 1);
   };
 
+  const [expCount, setExpCount] = useState(0);
+  const expComponents = [];
+  for (let i = 0; i < expCount; i += 1) {
+    expComponents.push(<Experience key={i} />);
+  }
+  const handleExpClick = () => {
+    setExpCount(eduCount + 1);
+  };
+
   return (
     <div className='Editor'>
       <Header />
@@ -23,6 +33,10 @@ function Editor() {
         Add Education Section
       </button>
       {eduComponents}
+      <button type='button' onClick={handleExpClick}>
+        Add Experience Section
+      </button>
+      {expComponents}
     </div>
   );
 }
