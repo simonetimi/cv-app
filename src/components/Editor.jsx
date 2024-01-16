@@ -23,7 +23,7 @@ function Editor() {
     expComponents.push(<Experience key={i} />);
   }
   const handleExpClick = () => {
-    setExpCount(eduCount + 1);
+    setExpCount(expCount + 1);
   };
 
   return (
