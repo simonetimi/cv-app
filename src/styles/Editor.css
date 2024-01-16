@@ -2,7 +2,7 @@ div.Editor {
   box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
   border-radius: 4px;
   min-height: 90vh;
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
